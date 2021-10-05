@@ -6,6 +6,6 @@ def paridispari():
         print("Numero Pari")
     else:
         print("Numero Dispari")
-#Per eseguire il programma premere il tasto F1 e selezionare
-#Python: Esegui file python nel terminale
-paridispari()
+
+paridispari()        
+
