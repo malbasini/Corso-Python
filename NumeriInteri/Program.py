@@ -1,4 +1,4 @@
-def numeriinteri():
+def numeri():
     a = 123456789
     print(a)
     a=-800
@@ -25,4 +25,4 @@ def numeriinteri():
     a=10e-6
     print(a)
 
-numeriinteri()
+numeri()
