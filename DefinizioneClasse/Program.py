@@ -4,7 +4,7 @@ class MyClass(object):
               #counter in quanto definito nel body
               #della classe è un attributo di MyClass
     def __init__(self):
-        MyClass.counter+=1 #Ogni volta che produciamo una
+        MyClass.counter+=1 #Ogni volta che creiamo una
                            #nuova istanza, viene chiamato
                            #__init__ e incrementato il contatore
     
