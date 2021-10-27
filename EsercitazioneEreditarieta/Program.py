@@ -50,7 +50,8 @@ class utente(persona):
         @saldo.setter
         def saldo(self,saldo):
             if (saldo < 0):
-                print(f'Impossibile impostare il saldo, valore passato: ' + {saldo})
+                s=f'Impossibile impostare il saldo, valore passato: {saldo}'
+                print(s)
                 return
             else:
                 self.__saldo_ = saldo
