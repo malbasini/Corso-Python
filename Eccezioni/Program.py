@@ -1,0 +1,25 @@
+def divisionbyzero(a,b):
+    return a//b
+try:
+    c=divisionbyzero(9,3)
+except (ZeroDivisionError,ValueError) as e:#Si possono indicare più classi di eccezioni                                   #su una riga
+    print("ERRORE DIVISIONE PER 0!")
+    print(e.args)
+except IndexError:
+    print("INDEX ERROR!")
+except Exception:
+    print("ERRORE GENERICO!")
+else:
+    print(c)    
+finally:
+    print('FINALLY!')
+#POSSIAMO DECIDERE DI UTILIZZARE N CLASSI DI ECCEZIONI
+#IN QUESTO CASO LA GESTIONE DELL'ERRORE NON E' MOLTO
+#ARTICOLATA, IL PROGRAMMA SI LIMITA A STAMPARE UN MESSAGGIO
+#TUTTAVIA IN QUESTO CASO IL PROGRAMMA NON TERMINA IN MODO
+#ANOMALO E NON C'E' LA RISALITA NELLO STACK DI CHIAMATE PER
+#TROVARE UN GESTORE DI ERRORE VALIDO.LA CLAUSOLA FINALLY
+#VIENE SEMPRE ESEGUITA NORMALMENTE VIENE UTILIZZATA PER 
+#RILASCIARE RISORSE AD ESEMPIO CHIUDERE LA CONNESSIONE A UN
+#DATABASE.
+
