@@ -2,7 +2,8 @@ def divisionbyzero(a,b):
     return a//b
 try:
     c=divisionbyzero(9,3)
-except (ZeroDivisionError,ValueError) as e:#Si possono indicare più classi di eccezioni                                   #su una riga
+except (ZeroDivisionError,ValueError) as e:#Si possono indicare più classi di 
+    #eccezioni su una riga
     print("ERRORE DIVISIONE PER 0!")
     print(e.args)
 except IndexError:
