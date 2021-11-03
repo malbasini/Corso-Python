@@ -1,3 +1,3 @@
-import webbrowser as web
+from webbrowser import open
 address = input('Inserisci la località:')
-web.open('https://www.google.com/maps/place/' + address)
+open('https://www.google.com/maps/place/' + address)

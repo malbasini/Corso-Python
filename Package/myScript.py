@@ -2,6 +2,8 @@
 #INSERIRE Modulo1 e Modulo2 in dir_c. CREARE LA VARIABILE D'AMBIENTE
 #PYTHONPATH CHE PUNTA A dir_a.
 
+
+#FILE myScript.py
 import dir_b.dir_c.Modulo1 as m1
 import dir_b.dir_c.Modulo2 as m2
 #MODULO1

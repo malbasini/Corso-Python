@@ -2,6 +2,8 @@
 #IL METODO VERIFICA SE IL NUMERO PASSATO IN INPUT
 #E' UN NUMERO PRIMO
 
+
+#Modulo1.py
 def numeroPrimo(numero):
     divisore = 2
     while divisore <= numero:
