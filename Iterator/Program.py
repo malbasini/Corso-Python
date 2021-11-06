@@ -1,4 +1,4 @@
-#L'algoritmo itera tra 0 e un valore intero passato come parametro
+#The algorithm iterates between 0 and an integer value passed as a parameter
 class MyIterator():
     def __iter__(self):
         self.myAttr = 0
