@@ -6,7 +6,7 @@ from typing import List
 #diversi modi di utilizzare le annotazioni di funzione.
 #Nota che se ci sono parametri con valori predefiniti, 
 #le annotazioni devono sempre precedere il valore predefinito 
-#di un parametro come hai visto nel terzo esempio sotto.
+#di un parametro come hai visto nel terzo esempio sotto riportato.
 def func1(num1:str = "1st param", num2:str = "2nd param") -> str:
     return num1 + num2
 def func2(num1: int, num2: int) -> int:
@@ -18,6 +18,7 @@ print(func1('pippo','pluto'))
 print(func2(20,30))
 print(func3(80))
 print(func2.__annotations__)
+
 #Annotazioni di variabili
 name: str
 city: str = 'Mysor'
