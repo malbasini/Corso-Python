@@ -8,7 +8,7 @@ class Dictionary(object):
     def __init__(self,d1,d2):
         self.d1 = {"a":"primo","b":"secondo","c":"terzo"}
         self.d2 = {"d":"quarto","a":"quinto"}
-    def print(self):
+    def stampa(self):
         print(self.d1)
         print(self.d2)
     def merge(self):
@@ -25,9 +25,9 @@ class Dictionary(object):
         print(f'Operatore Self In Place Union applicato a d1 e d2 d1= {self.d1}')
 
 a=Dictionary([],[])
-a.print()
+a.stampa()
 a.merge()
-#Supponiamo di inserire la chiave a già presentein d1
+#Supponiamo di inserire la chiave a già presente in d1
 #il riusltato come si vede è che questa andrà a sovrascrivere
 #la chiave "a" di d1.
 a.operatoreUnion()
