@@ -7,12 +7,12 @@ class MyClass(object):
     def __init__(self,list):
         self.list = list
     def example1(self):
-        #Usare le espressioni di assegnazione negli statement if
+        #Using assignment expressions in if statements
         if (length := len(self.list)) > 2:
             print("List length of", length, "is too long")
     @staticmethod
     def example2():
-        #Usare le espressioni di assegnazione nei cicli
+        #Use assignment expressions in loops
         while (directive := input("Enter text: ")) != "stop":
             print("Received directive", directive)
     @staticmethod
@@ -24,5 +24,5 @@ l=[1,2,3,4,5]
 e=MyClass(l)
 e.example1()
 MyClass.example2()
-#Usare le espressioni di assegnazione nei range
+#Using assignment expressions in ranges
 [result for i in range(6) if (result := MyClass.example3(i)) > 0]

@@ -6,15 +6,15 @@ class String(object):
     def __init__(self,nome):
         self.nome=nome
     def rStrip(self,sottostringa):
-        #ELIMINA CARATTERI A DESTRA. VIENE RESTITUITA UNA STRINGA
-        #IN CASO DI SUCCESSO PIU' CORTA DI QUELLA DI ORIGINE
+        #DELETE CHARACTERS ON THE RIGHT. A STRING IS RETURNED
+        #IN CASE OF SUCCESS SHORTER THAN THE ORIGINAL ONE
         print(f'rstrip: {self.nome.rstrip(sottostringa)}') 
     def strip(self,spazi,sottostringa):
         if spazi == False:
             print(f'strip: {self.nome.strip(sottostringa)}')
         else:
-            #LASCIANDO VUOTE LE PARENTESI VENGONO ELIMINATI SPAZI
-            #A DESTRA E SINISTRA
+             #LEAVING THE PARENTHESES EMPTY, SPACES ARE ELIMINATED
+             #RIGHT AND LEFT
             print(f'strip: {self.nome.strip()}')
     def lStrip(self,sottostringa):
         print(f'lstrip: {self.nome.lstrip(sottostringa)}')
@@ -29,13 +29,13 @@ a.strip(False,'re')
 a.lStrip('re')
 b=String("   Mario Rossi  ")
 b.strip(True,'')
-#UN EFFETTO COLLATERALE DI QUESTI METODI CHE TALVOLTA HA
-#GENERATO INCOMPRENSIONE TRA I PROGRAMMATORI E' DOVUTA AL FATTO
-#CHE PASSANDO LA SEQUENZA INVERSA 'er' ANZICHE' 're' OTTENIAMO LO
-#STESSO RISULTATO. QUESTO E' DOVUTO AL FATTO CHE QUESTE TRE FUNZIONI
-#USANO UN INSIEME DI CARATTERI NON DELLE STRINGHE. LA PRESENZA
-#DI QUESTI CARATTERI APPLICATI IN UNA QUALSIASI SEQUENZA PROVOCA
-#LO STESSO COMPORTAMENTO.
+#A SIDE EFFECT OF THESE METHODS THAT SOMETIMES HAS
+#GENERATED MISUNDERSTANDING AMONG THE PROGRAMMERS IS DUE TO FACT
+#THE PASSING THE REVERSE SEQUENCE 'er' INSTEAD OF '' re 'WE GET IT
+#SAME RESULT. THIS IS DUE TO THE FACT THAT THESE THREE FUNCTIONS
+#THEY USE A SET OF CHARACTERS NOT STRINGS. THE PRESENCE
+#OF THESE CHARACTERS APPLIED IN ANY SEQUENCE IT CAUSES
+#SAME BEHAVIOR.
 #a.rStrip('er')
 #a.strip(False,'er')
 #a.lStrip('er')

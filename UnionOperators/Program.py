@@ -27,9 +27,9 @@ class Dictionary(object):
 a=Dictionary([],[])
 a.stampa()
 a.merge()
-#Supponiamo di inserire la chiave a già presente in d1
-#il riusltato come si vede è che questa andrà a sovrascrivere
-#la chiave "a" di d1.
+#Suppose to insert the key a already present in d1
+#the result as you can see is that this will overwrite
+#the "a" key of d1.
 a.operatoreUnion()
 a.inPlaceOperatore()
     
