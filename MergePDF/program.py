@@ -14,8 +14,8 @@ for nomeFile in lista:
 try:               
     pdfDestinazione = open(nome +'.pdf','wb')#w=write b=binary     
     writer.write(pdfDestinazione)
-    pdfDestinazione.close()
     print(f'Merge eseguito correttamente')
 except(Exception) as ex:
-    pdfDestinazione.close()
     print(ex.args)
+finally:
+    pdfDestinazione.close()
