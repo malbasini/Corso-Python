@@ -1,6 +1,7 @@
 import openai
 from decouple import config
 openai.api_key=config("OPENAI_API_KEY")
+#Primo esempio con la classe Completion
 def test_api():
     risposta=openai.Completion.create(
         engine="text-davinci-002",

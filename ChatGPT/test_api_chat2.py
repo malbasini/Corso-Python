@@ -2,7 +2,7 @@ import sys
 import openai
 from decouple import config
 openai.api_key=config("OPENAI_API_KEY")
-
+#Terzo esempio una conversazione tra l'utente e l'assistente virtuale
 def chat_with_openai():
     chat_history=[]
     while True:

@@ -1,6 +1,7 @@
 import openai
 from decouple import config
 openai.api_key=config("OPENAI_API_KEY")
+#Secondo esempio con la classe ChatCompletion
 completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
